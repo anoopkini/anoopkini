@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" data-theme="light">
+        <html lang="en" data-theme="light" className='scroll-smooth'>
             {/* <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head> */}

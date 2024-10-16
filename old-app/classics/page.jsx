@@ -1,5 +1,5 @@
-import { FeedbackForm } from 'components/feedback-form';
-import { Markdown } from '../../components/markdown';
+import { FeedbackForm } from 'old-components/feedback-form';
+import { Markdown } from '../../old-components/markdown';
 
 export const metadata = {
     title: 'Classics'

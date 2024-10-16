@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Alert } from '../../components/alert';
-import { Markdown } from 'components/markdown';
+import { Alert } from '../../old-components/alert';
+import { Markdown } from 'old-components/markdown';
 
 export const metadata = {
     title: 'Fallback'

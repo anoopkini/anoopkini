@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { Card } from 'components/card';
-import { RandomQuote } from 'components/random-quote';
-import { Markdown } from 'components/markdown';
-import { ContextAlert } from 'components/context-alert';
+import { Card } from 'old-components/card';
+import { RandomQuote } from 'old-components/random-quote';
+import { Markdown } from 'old-components/markdown';
+import { ContextAlert } from 'old-components/context-alert';
 import { getNetlifyContext } from 'utils';
 
 const cards = [

@@ -1,6 +1,6 @@
 import { revalidateTag } from 'next/cache';
-import { SubmitButton } from '../../components/submit-button';
-import { Markdown } from '../../components/markdown';
+import { SubmitButton } from '../../old-components/submit-button';
+import { Markdown } from '../../old-components/markdown';
 
 export const metadata = {
     title: 'On-Demand Revalidation'

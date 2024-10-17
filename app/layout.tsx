@@ -1,3 +1,4 @@
+import SiteUnderConstruction from 'components/global/SiteUnderConstruction';
 import '../styles/globals.css';
 
 export const metadata = {
@@ -13,16 +14,17 @@ export default function RootLayout({ children }) {
             {/* <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head> */}
-            <body className="antialiased prose mx-auto">
+            <body id="top" className="antialiased prose mx-auto">
                 <div className="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">
-                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
+                    <div className="flex flex-col w-full mx-auto grow">
                         {/* <Header /> */}
                         <div className="grow">{children}</div>
                         {/* <Footer /> */}
-                        <div className="fixed w-full bg-white left-0 bottom-0 p-3 text-center border-t-2">🚧 Site Under Developement 🚧</div>
+                        {/* <SiteUnderConstruction /> */}
                     </div>
                 </div>
             </body>
         </html>
     );
 }
+

@@ -13,7 +13,7 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 
 function GoBack(){
   return (
-    <nav><Link href="/#recent-posts">&larr; Go back</Link></nav>
+    <nav className="my-2"><Link href="/#recent-posts">&larr; Go back</Link></nav>
   );
 }
 

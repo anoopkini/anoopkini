@@ -24,7 +24,7 @@ export default function PostTimelineCard(post: Post) {
                         clipRule="evenodd" />
                 </svg>
             </div>
-            <div className="timeline-end "><Link className="hover:underline" href={post.url}>{post.title}</Link></div>
+            <div className="timeline-end timeline-box"><Link className="hover:underline" href={post.url}>{post.title}</Link></div>
             <hr />
         </li>
         </>

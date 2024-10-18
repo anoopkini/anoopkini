@@ -13,7 +13,7 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
 
 function GoBack(){
   return (
-    <nav className="my-2"><Link href="/#recent-posts">&larr; Go back</Link></nav>
+    <nav className="my-5"><Link href="/#recent-posts">&larr; Go back</Link></nav>
   );
 }
 
@@ -23,6 +23,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
+<div className="py-8 mt-24">
     <GoBack />
     <article className="mx-auto max-w-xl py-8">
       <div className="mb-8">
@@ -37,6 +38,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
       <div className="[&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </article>
     <GoBack />
+</div>
     </>
   )
 }

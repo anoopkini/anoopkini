@@ -9,7 +9,8 @@ export default function Navbar() {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link href="/#recent-projects" className="link link-hover">Projects</Link></li>
+                        <li><Link href="/career" className="link link-hover">Career</Link></li>
+                        {/* <li><Link href="/#recent-projects" className="link link-hover">Projects</Link></li> */}
                         <li><Link href="/#recent-posts" className="link link-hover">Blog</Link></li>
                         {/* <li>
                             <details>

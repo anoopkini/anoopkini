@@ -1,6 +1,7 @@
 import { Post } from "contentlayer/generated";
-import { format, parseISO } from 'date-fns'
 import Link from "next/link";
+import { getCategoryHref, getPostCategory } from "utils/categories";
+import { formatPostDate } from "utils/dates";
 
 export default function PostTimelineCard(post: Post) {
     return (
@@ -9,7 +10,7 @@ export default function PostTimelineCard(post: Post) {
             <hr />
             <div className="timeline-start">
                 <time dateTime={post.created} className="text-xs text-gray-600">
-                    {format(parseISO(post.created), 'LLLL d, yyyy')}
+                    {formatPostDate(post.created)}
                 </time>
             </div>
             <div className="timeline-middle">
@@ -24,7 +25,14 @@ export default function PostTimelineCard(post: Post) {
                         clipRule="evenodd" />
                 </svg>
             </div>
-            <div className="timeline-end timeline-box"><Link className="hover:underline" href={post.url}>{post.title}</Link></div>
+            <div className="timeline-end timeline-box transition-colors hover:bg-base-200/60">
+                <Link className="hover:underline" href={post.url}>{post.title}</Link>
+                <div className="mt-1 text-xs text-gray-600">
+                    <Link className="link link-hover" href={getCategoryHref(post)}>
+                        {getPostCategory(post)}
+                    </Link>
+                </div>
+            </div>
             <hr />
         </li>
         </>

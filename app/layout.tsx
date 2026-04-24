@@ -1,6 +1,7 @@
 import SiteUnderConstruction from 'components/global/SiteUnderConstruction';
 import '../styles/globals.css';
 import Navbar from 'components/global/Navbar';
+import FloatingBackToTop from 'components/global/FloatingBackToTop';
 
 export const metadata = {
     title: {
@@ -11,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" data-theme="light" className='scroll-smooth'>
+        <html lang="en" data-theme="light" data-scroll-behavior="smooth" className='scroll-smooth'>
             {/* <head>
                 <link rel="icon" href="/favicon.svg" sizes="any" />
             </head> */}
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
                         {/* <Header /> */}
                         <div className="relative"><Navbar /></div>
                         <div className="grow">{children}</div>
+                        <FloatingBackToTop />
                         {/* <Footer /> */}
                         {/* <SiteUnderConstruction /> */}
                     </div>
@@ -29,4 +31,3 @@ export default function RootLayout({ children }) {
         </html>
     );
 }
-
